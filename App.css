@@ -1,0 +1,34 @@
+html {
+    height: 100%;
+}
+
+.background {
+    background: #3498db;  /* fallback for old browsers */
+}
+
+.top {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+.main {
+    min-height: 400px;
+}
+
+.avatar {
+    max-height: 76px;
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+.icon-lg {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.clickable-row {
+    cursor: pointer;
+}
