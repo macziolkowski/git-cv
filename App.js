@@ -8,17 +8,6 @@ class App extends React.Component {
         loaded: false
     }
 
-    componentDidMount() {
-        const url = `https://api.github.com/users/macziolkowski`;
-        const urlRepos = `https://api.github.com/users/macziolkowski/repos`;
-        fetch(url)
-            .then(response => response.json())
-            .then(data => this.setState({user: data, loaded: true}))
-        fetch(urlRepos)
-            .then(response => response.json())
-            .then(data => this.setState({repos: data}))
-    }
-
     clearInfo() {
         this.setState({
             searchUser: '',
